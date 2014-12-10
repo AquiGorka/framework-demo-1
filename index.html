@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Framework Quick Demo</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Framework Quick Demo">
+        <meta name="author" content="Gorka Ludlow">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <!-- libs -->
+        <script src="libs/aquigorka/observable.js"></script>
+        <script src="libs/jquery/jquery.min.js"></script>
+        <script src="libs/aquigorka/module.js"></script>
+        <script src="libs/aquigorka/router.js"></script>
+        <!-- utils -->
+        <script src="libs/aquigorka/utils.js"></script>
+        <!-- modules --> 
+        <script src="modules/layout/js/module.js"></script>
+        <script src="modules/module-1/js/module.js"></script>
+        <script src="modules/module-2/js/module.js"></script>
+        <!-- app -->
+        <script>
+        (function () {
+            "use strict";
+            // router init
+            router.init([
+                new Module1(),
+                new Module2()
+            ]);
+            // layout
+            layout.show();
+            // let's rock n' roll!
+            router.routeToModuleId('module-1');
+        })();
+        </script>
+    </body>
+</html>

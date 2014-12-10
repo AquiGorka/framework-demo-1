@@ -1,0 +1,6 @@
+/* Login */
+#loginModule{text-align:center; margin-top:20%;}
+#loginModule form{width:250px; border:1px solid #CCC; box-shadow:0 0 1px #CCC; margin:auto auto; padding:15px 10px 10px 10px;}
+#loginModule div{padding:5px;}
+#loginModule label{display:inline-block; width:80px;}
+#loginModule img{height:15px; position:relative; top:5px; display:none;}
